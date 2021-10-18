@@ -179,6 +179,7 @@ html::-webkit-scrollbar-thumb {
 .article__data {
     min-width: 45%;    
     max-width: 45%;
+    height: 250px;
     padding: 10px;
     margin: 10px;
     border: 1px solid black;
@@ -186,7 +187,6 @@ html::-webkit-scrollbar-thumb {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    height: auto;
     background: var(--color7);
     color: var(--color6);
     border-radius: 5px;
