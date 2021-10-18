@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>API Marvel</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Andada+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="container__body">
+
+    <header class="container__header">
+        <div class="container_header-titulo">
+            <div class="container_header-content">
+                <img class="container__header-img" src="assets/principal.png" alt="">
+                <h1 class="container_header-texto">API Marvel</h1>
+            </div>
+        </div>
+        <nav class="container__header-nav">
+            <label for="menu" class="nav__label">
+                <i class="fas fa-bars"></i>
+            </label>
+            <input type="checkbox" id="menu" class="nav__input">
+            <ul class="container__header-nav-ul">
+                <li class="container__header-nav-li">
+                    <a class="container__header-nav-link" id="personajes" href="">Characters</a>
+                </li>
+                <li class="container__header-nav-li">
+                    <a class="container__header-nav-link" id="comics" href="">Comics</a>
+                </li>
+                <li class="container__header-nav-li">
+                    <a class="container__header-nav-link" id="comics" href="">Repository</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div id="container_buscar" class="container_buscar">
+            <div>
+                <input type="text" id="input" class="container_buscar-input" autofocus autocomplete="off"
+                    placeholder="Enter character name">
+                <i class="fas fa-search"></i>
+            </div>
+            <div id="container__warning" class="container__warning">No results found 😵</div>
+        </div>
+        <div class="container_contenido">
+            <div>
+                <h3 class="container_contenido-titulo">Information</h3>
+            </div>
+
+            <section id="container__datos" class="container__contenido-texto">
+            </section>
+        </div>
+
+        <template id="template__data">
+            <article class="article__data">
+                <p class="article__data-nombre">Name</p>
+                <p class="article__data-descripcion">Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit
+                    amet consectetur Lorem ipsum dolor sit amet consectetur</p>
+                <picture class="article__data-picture">
+                    <img onerror="this.src='assets/principal.png'" class="article__data-imagen"
+                        src="assets/principal.png" alt="">
+                </picture>
+            </article>
+        </template>
+    </div>
+    <footer>
+        <div class="container__footer">
+            <div class="container__footer-content">
+                <p class="container__footer-p">Created with<span class="container__footer-span"> ❤ </span>by Anthony</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>
