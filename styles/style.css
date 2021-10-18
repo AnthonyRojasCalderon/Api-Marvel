@@ -330,7 +330,7 @@ footer {
     }
 
     .article__data{
-        max-width: 100%;
+        min-width: 100%;
     }
 }
 
